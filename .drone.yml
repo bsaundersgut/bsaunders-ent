@@ -3,11 +3,10 @@ type: docker
 name: default
 
 steps:
-- name: test
-  image: python
+- name: Test
+  image: alpine
   commands:
-  - pip install -r requirements.txt
-  - pytest
+  - echo -n "this-is-a-test" > .tags
 
 trigger:
   branch:
