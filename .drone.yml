@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: test
-  image: python:latest
+  image: python
   commands:
   - pip install -r requirements.txt
   - pytest
